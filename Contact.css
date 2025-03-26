@@ -1,0 +1,147 @@
+
+/* Navbar Customs*/
+body {
+  display: flex;
+  justify-content: space-between;
+  justify-content: start;
+  background-image: url('Images/contact.avif'); /* Path to your image */
+  background-size:cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Optional: keeps image fixed when scrolling */  
+      
+    
+}
+
+button.btn.float-end {
+z-index: 1050; /* Ensure it's above background */
+position: fixed;
+}
+
+#offcanvas {
+background-color: white;
+min-height: 120vh; /* Ensures it covers full screen but can grow */
+height: auto; /* Allows it to expand dynamically */
+overflow-y: auto; /* Enables scrolling if content overflows */
+width: 1000px;
+}
+
+
+#name{
+  font-family: "Yuji Boku", serif;
+}
+
+#home{
+  font-family: "Yuji Boku", serif;
+}
+
+#about{
+  font-family: "Yuji Boku", serif;
+}
+
+#portfolio{
+  font-family: "Yuji Boku", serif;
+}
+
+#contact{
+  font-family: "Yuji Boku", serif;
+}
+
+#navp{
+  font-family: "Yuji Boku", serif;
+}
+
+#resume{
+  font-family: "Yuji Boku", serif;
+
+}
+
+#heart{
+  color: red;
+}
+
+
+
+ /* Ensure the sidebar is always open on large screens */
+ @media (min-width: 1325px) {
+  .offcanvas {
+      position: relative !important;
+      transform: none !important;
+      visibility: visible !important;
+  }
+}
+@media (max-width: 768px) { /* For phones */
+  #offcanvas {
+      width: 35% !important; /* Increase the width of the navbar */
+  }
+}
+@media (max-width: 640px) { /* For phones */
+#offcanvas {
+    width: 45% !important; /* Increase the width of the navbar */
+}
+}
+
+
+
+/*  Contact Me Section */
+
+#contact-me{
+position: relative;
+left: 10%;
+margin-top: 40px;
+}
+
+#arrow{
+color: pink;
+}
+
+@media (max-width: 991px) {
+.contact-me {
+  position:relative;
+   right: 15%;
+} 
+}
+
+@media (max-width: 991px) {
+  .contact-me {
+    position:relative;
+     right: 15%;
+  } 
+  }
+
+@media (max-width: 640px) {
+#contact-me {
+margin-top: 80px;
+} 
+}
+
+.contact-form{
+  width: 200%;
+  
+
+}
+
+.form-control{
+  height: 60px;
+  
+}
+
+.contact-container{
+  padding-top: 200px;
+}
+
+@media (max-width: 558px) {
+  .contact-container {
+   position:relative;
+   right: 34%;
+  } 
+  }
+
+ 
+
+  #contact-btn {
+    position: relative; /* Ensure it's not covered by other elements */
+    z-index: 1000; /* Bring it to the front */
+    margin-top: 20px;
+
+}
