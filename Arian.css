@@ -1,7 +1,7 @@
 
 /* Navbar Customs*/
 body {
-    background-image: url('Images/jpa.avif'); /* Path to your image */
+    background-image: url('giphy\ \(1\).gif'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire screen */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -45,10 +45,6 @@ button.btn.float-end {
     font-family: "Yuji Boku", serif;
   }
 
-  #resume{
-    font-family: "Yuji Boku", serif;
-
-  }
 
   #heart{
     color: red;
@@ -103,7 +99,7 @@ button.btn.float-end {
 .content-center {
 position: relative;
 z-index: 2;
-color: #fff; /* Text color */
+color: black; /* Text color */
 margin-left: 250px; /* Adjust this to match your navbar width */
 }
 
@@ -112,7 +108,7 @@ margin-left: 250px; /* Adjust this to match your navbar width */
 width: 150px;
 height: 150px;
 border-radius: 50%;
-border: 5px solid #fff; /* White border around the image */
+border: 5px solid black; /* White border around the image */
 margin-bottom: 20px;
 }
 
@@ -151,7 +147,7 @@ margin: 0;
 
 .fa-brands{
   height: 10%;
-  width: 10%
+  width: 15%
 }
 
 @media (max-width: 558px) {
@@ -188,8 +184,13 @@ margin: 0;
 
 }
 .fa-envelope{
+  color: white;
   font-size: 25px;
 
+}
+#navEnvelope{
+  font-size: 17px;
+  color:black;
 }
 #arrow{
   color: pink;
@@ -199,3 +200,6 @@ margin: 0;
   margin-top: 15px;
 }
 
+.icon-container a {
+  text-decoration: none; /* Removes the underline */ 
+}

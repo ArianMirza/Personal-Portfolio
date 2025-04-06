@@ -63,7 +63,7 @@ width: 1000px;
 
 
  /* Ensure the sidebar is always open on large screens */
- @media (min-width: 1325px) {
+ @media (min-width: 992px) {
   .offcanvas {
       position: relative !important;
       transform: none !important;
@@ -109,17 +109,38 @@ color: pink;
   } 
   }
 
+
 @media (max-width: 640px) {
 #contact-me {
 margin-top: 80px;
 } 
 }
 
-.contact-form{
-  width: 200%;
-  
+@media (max-width: 558px) {
+  #contact-me {
+    position: relative;
+    left: 150px;
+  margin-top: 80px;
+  } 
+  }
+  @media (max-width: 558px) {
+    .contact-form {
+      max-width: 350px;
+position: relative;    
+right: 50px;} 
+    }
 
-}
+  @media (max-width: 571px) {
+    .contact-form {
+      margin-left: 45%;
+    } 
+    }
+
+    .contact-form {
+      width: 200%;
+      position: relative;
+      z-index: 10; /* Make sure it's above background or other content */
+    }
 
 .form-control{
   height: 60px;
@@ -133,14 +154,15 @@ margin-top: 80px;
 @media (max-width: 558px) {
   .contact-container {
    position:relative;
-   right: 34%;
+   right: 33%;
   } 
-  }
+}
 
  
 
   #contact-btn {
     position: relative; /* Ensure it's not covered by other elements */
+    justify-content: space-between;
     z-index: 1000; /* Bring it to the front */
     margin-top: 20px;
 

@@ -62,7 +62,7 @@ button.btn.float-end {
   
 
    /* Ensure the sidebar is always open on large screens */
-   @media (min-width: 1024px) {
+   @media (min-width: 992px) {
     .offcanvas {
         position: relative !important;
         transform: none !important;
@@ -118,19 +118,23 @@ button.btn.float-end {
   #about-p{
   font-size: 1em;
   margin-top: 15px;
-
    } 
  }
 
-
-#resume-btn{
+ #resume-btn, #hireMe-btn {
   background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.info-hr {
-  width: 30%; /* Full width */
-  margin-top: -10px; /* Space between text and line */
-  border: 1.5px solid black; /* Customize thickness and color */
+#resume-btn:hover, #hireMe-btn:hover {
+  background-color: pink;
+  color: black;
+  border: 1px solid black; /* Optional: adds a border to keep button shape */
 }
 
 .info-container {
@@ -139,3 +143,31 @@ button.btn.float-end {
   max-width: 450px; /* Adjust width as needed */
   gap: 20px; /* Adds spacing between them */
 }
+
+
+.chart-container {
+  position: relative;
+  width: 80vw; /* 80% of the viewport width */
+  height: 40vh; /* 40% of the viewport height */
+margin-top: 50px;
+left: 50%;
+}
+@media (max-width: 1200px) {
+  .chart-container{
+    position: relative;
+    left: 10%;
+   } 
+ }
+
+ @media (max-width: 567px) {
+  .chart-container{
+    position: relative;
+    left: 10%;
+   } 
+ }
+
+ @media (max-width: 558px) {
+  .chart-container{
+    height: 30vh;
+   } 
+ }
