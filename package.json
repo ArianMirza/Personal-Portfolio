@@ -16,8 +16,8 @@
   "bugs": {
     "url": "https://github.com/ArianMirza/Personal-Portfolio/issues"
   },
-  "homepage": "https://github.com/ArianMirza.github.io/myportfolio",
-  "dependencies": {
+  "homepage": "https://arianmirza.github.io/Personal-Portfolio/",
+  "devDependencies": {
     "gh-pages": "^6.3.0"
   }
 }
