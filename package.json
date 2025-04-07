@@ -1,0 +1,23 @@
+{
+  "name": "arianofpersia",
+  "version": "1.0.0",
+  "description": "THIS IS MY PORTFOLIO",
+  "main": "About.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArianMirza/Personal-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArianMirza/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/ArianMirza.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
