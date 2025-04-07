@@ -1,0 +1,173 @@
+
+/* Navbar Customs*/
+body {
+    background-image: url('Images/about.jpg'); /* Path to your image */
+    background-size:cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Optional: keeps image fixed when scrolling */  
+        
+      
+}
+element {
+  width: xxx px;
+}
+
+button.btn.float-end {
+  z-index: 1050; /* Ensure it's above background */
+  position: fixed;
+}
+
+#offcanvas {
+  background-color: white;
+  min-height: 120vh; /* Ensures it covers full screen but can grow */
+  height: auto; /* Allows it to expand dynamically */
+  overflow-y: auto; /* Enables scrolling if content overflows */
+}
+
+
+  #name{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #home{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #about{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #portfolio{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #contact{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #navp{
+    font-family: "Yuji Boku", serif;
+  }
+
+  #resume{
+    font-family: "Yuji Boku", serif;
+
+  }
+
+  #heart{
+    color: red;
+  }
+
+  
+
+   /* Ensure the sidebar is always open on large screens */
+   @media (min-width: 992px) {
+    .offcanvas {
+        position: relative !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+}
+@media (max-width: 768px) { /* For phones */
+    #offcanvas {
+        width: 35% !important; /* Increase the width of the navbar */
+    }
+}
+@media (max-width: 640px) { /* For phones */
+  #offcanvas {
+      width: 40% !important; /* Increase the width of the navbar */
+  }
+}
+
+
+
+/*  About Me Section */
+
+#about-me-section{
+    margin-left: 30%;
+    margin-top: 5em;
+  }
+
+  .about-me{
+    color: white;
+  }
+
+
+#arrow{
+  color: pink;
+}
+
+@media (max-width: 991px) {
+  .about-me {
+    position:relative;
+     right: 15%;
+  } 
+}
+
+@media (max-width: 776px) {
+  .about-me {
+    position:relative;
+     right: 70px;
+     font-size: 90%
+  } 
+}
+
+
+@media (max-width: 558px) {
+  #about-p{
+  font-size: 1em;
+  margin-top: 15px;
+   } 
+ }
+
+ #resume-btn, #hireMe-btn {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#resume-btn:hover, #hireMe-btn:hover {
+  background-color: pink;
+  color: black;
+  border: 1px solid black; /* Optional: adds a border to keep button shape */
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Puts space between items */
+  max-width: 450px; /* Adjust width as needed */
+  gap: 20px; /* Adds spacing between them */
+}
+
+
+.chart-container {
+  position: relative;
+  width: 80vw; /* 80% of the viewport width */
+  height: 40vh; /* 40% of the viewport height */
+margin-top: 50px;
+left: 50%;
+}
+@media (max-width: 1200px) {
+  .chart-container{
+    position: relative;
+    left: 10%;
+   } 
+ }
+
+ @media (max-width: 567px) {
+  .chart-container{
+    position: relative;
+    left: 10%;
+   } 
+ }
+
+ @media (max-width: 558px) {
+  .chart-container{
+    height: 30vh;
+   } 
+ }
